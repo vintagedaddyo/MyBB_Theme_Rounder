@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<theme name="Rounder" version="1821">
+<theme name="Rounder" version="1822">
 	<properties>
-		<templateset><![CDATA[15]]></templateset>
+		<templateset><![CDATA[12]]></templateset>
 		<editortheme><![CDATA[mybb.css]]></editortheme>
 		<imgdir><![CDATA[themes/rounder]]></imgdir>
 		<logo><![CDATA[themes/rounder/logo.png]]></logo>
@@ -11,7 +11,7 @@
 		<disporder><![CDATA[a:7:{s:17:"thread_status.css";i:1;s:16:"star_ratings.css";i:2;s:10:"usercp.css";i:3;s:14:"showthread.css";i:4;s:10:"global.css";i:5;s:8:"css3.css";i:6;s:9:"modcp.css";i:7;}]]></disporder>
 	</properties>
 	<stylesheets>
-		<stylesheet name="showthread.css" attachedto="showthread.php" version="1821"><![CDATA[/*
+		<stylesheet name="showthread.css" attachedto="showthread.php" version="1822"><![CDATA[/*
  * MyBB: Rounder Frontend Theme 
  *
  * File: showthread.css
@@ -71,9 +71,10 @@ ul.thread_tools li.poll {
 		
 		
 		
+		
 		]]>
 		</stylesheet>
-		<stylesheet name="star_ratings.css" attachedto="forumdisplay.php|showthread.php" version="1821"><![CDATA[/*
+		<stylesheet name="star_ratings.css" attachedto="forumdisplay.php|showthread.php" version="1822"><![CDATA[/*
  * MyBB: Rounder Frontend Theme 
  *
  * File: star_rating.css
@@ -176,9 +177,101 @@ td .star_rating {
 		
 		
 		
+		
 		]]>
 		</stylesheet>
-		<stylesheet name="global.css" version="1821"><![CDATA[/*
+		<stylesheet name="thread_status.css" attachedto="forumdisplay.php|usercp.php|search.php" version="1822"><![CDATA[/*
+ * MyBB: Rounder Frontend Theme 
+ *
+ * File: thread_status.css
+ * 
+ * Author: Vintagedaddyo
+ *
+ * MyBB Version: 1.8
+ *
+ * Theme Version: 1.1
+ * 
+ */
+
+.thread_status {
+	display: inline-block;
+	background-repeat: no-repeat;
+	height: 18px;
+	width: 18px;
+}
+
+.thread_status.dot_folder {
+  background-image: url('themes/rounder/dot_folder.png'); 
+}
+
+.thread_status.dot_hotfolder {
+  background-image: url('themes/rounder/dot_hotfolder.png');  	
+}
+
+.thread_status.dot_hotclosefolder {
+ background-image: url('themes/rounder/dot_hotlockfolder.png'); 
+}
+
+.thread_status.dot_closefolder {
+ background-image: url('themes/rounder/dot_lockfolder.png'); 
+}
+
+.thread_status.dot_newfolder {
+ background-image: url('themes/rounder/dot_newfolder.png');  
+}
+
+.thread_status.dot_newhotfolder {
+ background-image: url('themes/rounder/dot_newhotfolder.png');  
+}
+
+.thread_status.dot_newhotclosefolder {
+ background-image: url('themes/rounder/dot_newhotlockfolder.png');  
+}
+
+.thread_status.dot_newclosefolder {
+ background-image: url('themes/rounder/dot_newlockfolder.png');
+}
+
+.thread_status.folder {
+ background-image: url('themes/rounder/folder.png');  
+}
+
+.thread_status.hotfolder {
+ background-image: url('themes/rounder/hotfolder.png');  
+}
+
+.thread_status.hotclosefolder {
+   background-image: url('themes/rounder/hotlockfolder.png');
+}
+
+.thread_status.closefolder {
+   background-image: url('themes/rounder/lockfolder.png'); 
+}
+
+.thread_status.movefolder {
+    background-image: url('themes/rounder/movefolder.png'); 
+}
+
+.thread_status.newfolder {
+    background-image: url('themes/rounder/newfolder.png'); 
+}
+
+.thread_status.newhotfolder {
+ background-image: url('themes/rounder/newhotfolder.png');
+}
+
+.thread_status.newhotclosefolder {
+    background-image: url('themes/rounder/newhotlockfolder.png');
+}
+
+.thread_status.newclosefolder {
+    background-image: url('themes/rounder/newlockfolder.png'); 
+}
+
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="global.css" version="1822"><![CDATA[/*
  * MyBB: Rounder Frontend Theme 
  *
  * File: global.css
@@ -2261,9 +2354,10 @@ div.jqi .jqisubstate .jqibuttons button {
 		
 		
 		
+		
 		]]>
 		</stylesheet>
-		<stylesheet name="css3.css" version="1821"><![CDATA[/*
+		<stylesheet name="css3.css" version="1822"><![CDATA[/*
  * MyBB: Rounder Frontend Theme 
  *
  * File: css3.css
@@ -2468,9 +2562,10 @@ element {
 }		
 		
 		
+		
 		]]>
 		</stylesheet>
-		<stylesheet name="modcp.css" attachedto="modcp.php" version="1821"><![CDATA[/*
+		<stylesheet name="modcp.css" attachedto="modcp.php" version="1822"><![CDATA[/*
  * MyBB: Rounder Frontend Theme 
  *
  * File: modcp.css
@@ -2585,9 +2680,10 @@ element {
 		
 		
 		
+		
 		]]>
 		</stylesheet>
-		<stylesheet name="usercp.css" attachedto="usercp.php|usercp2.php|private.php" version="1821"><![CDATA[/*
+		<stylesheet name="usercp.css" attachedto="usercp.php|usercp2.php|private.php" version="1822"><![CDATA[/*
  * MyBB: Rounder Frontend Theme 
  *
  * File: usercp.css
@@ -2776,96 +2872,7 @@ element {
 		
 		
 		
-		]]>
-		</stylesheet>
-		<stylesheet name="thread_status.css" attachedto="forumdisplay.php|usercp.php|search.php" version="1821"><![CDATA[/*
- * MyBB: Rounder Frontend Theme 
- *
- * File: thread_status.css
- * 
- * Author: Vintagedaddyo
- *
- * MyBB Version: 1.8
- *
- * Theme Version: 1.1
- * 
- */
-
-.thread_status {
-	display: inline-block;
-	background-repeat: no-repeat;
-	height: 18px;
-	width: 18px;
-}
-
-.thread_status.dot_folder {
-  background-image: url('themes/rounder/dot_folder.png'); 
-}
-
-.thread_status.dot_hotfolder {
-  background-image: url('themes/rounder/dot_hotfolder.png');  	
-}
-
-.thread_status.dot_hotclosefolder {
- background-image: url('themes/rounder/dot_hotlockfolder.png'); 
-}
-
-.thread_status.dot_closefolder {
- background-image: url('themes/rounder/dot_lockfolder.png'); 
-}
-
-.thread_status.dot_newfolder {
- background-image: url('themes/rounder/dot_newfolder.png');  
-}
-
-.thread_status.dot_newhotfolder {
- background-image: url('themes/rounder/dot_newhotfolder.png');  
-}
-
-.thread_status.dot_newhotclosefolder {
- background-image: url('themes/rounder/dot_newhotlockfolder.png');  
-}
-
-.thread_status.dot_newclosefolder {
- background-image: url('themes/rounder/dot_newlockfolder.png');
-}
-
-.thread_status.folder {
- background-image: url('themes/rounder/folder.png');  
-}
-
-.thread_status.hotfolder {
- background-image: url('themes/rounder/hotfolder.png');  
-}
-
-.thread_status.hotclosefolder {
-   background-image: url('themes/rounder/hotlockfolder.png');
-}
-
-.thread_status.closefolder {
-   background-image: url('themes/rounder/lockfolder.png'); 
-}
-
-.thread_status.movefolder {
-    background-image: url('themes/rounder/movefolder.png'); 
-}
-
-.thread_status.newfolder {
-    background-image: url('themes/rounder/newfolder.png'); 
-}
-
-.thread_status.newhotfolder {
- background-image: url('themes/rounder/newhotfolder.png');
-}
-
-.thread_status.newhotclosefolder {
-    background-image: url('themes/rounder/newhotlockfolder.png');
-}
-
-.thread_status.newclosefolder {
-    background-image: url('themes/rounder/newlockfolder.png'); 
-}
-
+		
 		]]>
 		</stylesheet>
 	</stylesheets>

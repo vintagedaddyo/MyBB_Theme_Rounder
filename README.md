@@ -23,6 +23,8 @@ Rounder v1.1
 » Changelog:
 
 History:
+03/19/2022 — Updated "Rounder-theme.xml" file to 1.8.30
+01/2/2020 - Updated "Rounder-theme.xml" file to 1.8.22 
 07/21/2019 — Updated "Rounder-theme.xml" file to 1.8.21
 04/05/2019 — Updated "Rounder-theme.xml" file to 1.8.20
 09/12/2018 — Updated "Rounder-theme.xml" file to 1.8.19

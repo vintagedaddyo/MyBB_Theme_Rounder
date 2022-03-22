@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<theme name="Rounder" version="1822">
+<theme name="Rounder" version="1830">
 	<properties>
-		<templateset><![CDATA[12]]></templateset>
+		<templateset><![CDATA[31]]></templateset>
 		<editortheme><![CDATA[mybb.css]]></editortheme>
 		<imgdir><![CDATA[themes/rounder]]></imgdir>
 		<logo><![CDATA[themes/rounder/logo.png]]></logo>
@@ -11,7 +11,7 @@
 		<disporder><![CDATA[a:7:{s:17:"thread_status.css";i:1;s:16:"star_ratings.css";i:2;s:10:"usercp.css";i:3;s:14:"showthread.css";i:4;s:10:"global.css";i:5;s:8:"css3.css";i:6;s:9:"modcp.css";i:7;}]]></disporder>
 	</properties>
 	<stylesheets>
-		<stylesheet name="showthread.css" attachedto="showthread.php" version="1822"><![CDATA[/*
+		<stylesheet name="showthread.css" attachedto="showthread.php" version="1830"><![CDATA[/*
  * MyBB: Rounder Frontend Theme 
  *
  * File: showthread.css
@@ -72,9 +72,10 @@ ul.thread_tools li.poll {
 		
 		
 		
+		
 		]]>
 		</stylesheet>
-		<stylesheet name="star_ratings.css" attachedto="forumdisplay.php|showthread.php" version="1822"><![CDATA[/*
+		<stylesheet name="star_ratings.css" attachedto="forumdisplay.php|showthread.php" version="1830"><![CDATA[/*
  * MyBB: Rounder Frontend Theme 
  *
  * File: star_rating.css
@@ -178,9 +179,10 @@ td .star_rating {
 		
 		
 		
+		
 		]]>
 		</stylesheet>
-		<stylesheet name="thread_status.css" attachedto="forumdisplay.php|usercp.php|search.php" version="1822"><![CDATA[/*
+		<stylesheet name="thread_status.css" attachedto="forumdisplay.php|usercp.php|search.php" version="1830"><![CDATA[/*
  * MyBB: Rounder Frontend Theme 
  *
  * File: thread_status.css
@@ -269,9 +271,203 @@ td .star_rating {
 }
 
 		
+		
 		]]>
 		</stylesheet>
-		<stylesheet name="global.css" version="1822"><![CDATA[/*
+		<stylesheet name="usercp.css" attachedto="usercp.php|usercp2.php|private.php" version="1830"><![CDATA[/*
+ * MyBB: Rounder Frontend Theme 
+ *
+ * File: usercp.css
+ * 
+ * Author: Vintagedaddyo
+ *
+ * MyBB Version: 1.8
+ *
+ * Theme Version: 1.1
+ * 
+ */
+
+.usercp_nav_item {
+	display: block;
+	padding: 1px 0 1px 23px; 
+	background-repeat: no-repeat;
+}
+
+.usercp_nav_composepm {
+	background-position: 0 0; 
+	background-image: url('themes/rounder/usercp/composepm.png'); 
+}
+
+.usercp_nav_pmfolder {
+    background-image: url('themes/rounder/usercp/pmfolder.png');  
+}
+
+.usercp_nav_sub_pmfolder {
+	padding-left: 40px;
+	background-image: url('themes/rounder/usercp/sub_pmfolder.png'); 
+}
+
+.usercp_nav_trash_pmfolder {
+	padding-left: 40px;
+	background-image: url('themes/rounder/usercp/trash_pmfolder.png');  
+}
+
+.usercp_nav_pmtracking {
+	background-image: url('themes/rounder/usercp/pmtracking.png');  
+}
+
+.usercp_nav_pmfolders {
+    background-image: url('themes/rounder/usercp/editfolders.png');
+}
+
+.usercp_nav_profile {
+	background-image: url('themes/rounder/usercp/profile.png');  
+}
+
+.usercp_nav_email {
+	padding-left: 40px;
+	background-image: url('themes/rounder/usercp/email.png');  
+}
+
+.usercp_nav_password {
+	padding-left: 40px;
+	background-image: url('themes/rounder/usercp/password.png'); 
+}
+
+.usercp_nav_username {
+	padding-left: 40px;
+	background-image: url('themes/rounder/usercp/username.png'); 
+} 
+
+.usercp_nav_editsig {
+	padding-left: 40px;
+	background-image: url('themes/rounder/usercp/editsig.png'); 
+}
+
+.usercp_nav_avatar {
+	padding-left: 40px;
+	background-image: url('themes/rounder/usercp/avatar.png');  
+}
+
+.usercp_nav_options {
+	background-image: url('themes/rounder/usercp/options.png');  
+}
+
+.usercp_nav_usergroups {
+	background-image: url('themes/rounder/usercp/usergroups.png');  
+}
+
+.usercp_nav_editlists {
+	background-image: url('themes/rounder/usercp/editlists.png');  
+}
+
+.usercp_nav_attachments {
+	background-image: url('themes/rounder/usercp/attachments.png');  
+}
+
+.usercp_nav_drafts {
+	background-image: url('themes/rounder/usercp/drafts.png');  
+}
+
+.usercp_nav_subscriptions {
+	background-image: url('themes/rounder/usercp/subscriptions.png'); 
+}
+
+.usercp_nav_fsubscriptions {
+	background-image: url('themes/rounder/usercp/fsubscriptions.png');  
+}
+
+.usercp_nav_viewprofile {
+	background-image: url('themes/rounder/usercp/viewprofile.png');  
+}
+
+.usercp_nav_home {
+	background-image: url('themes/rounder/usercp/home.png');  
+}
+
+.usercp_notepad {
+	width: 99%;
+}
+
+.usercp_container {
+	margin: 5px;
+	padding: 8px;
+	border: 1px solid rgb(165, 202, 228);
+
+}
+
+.usercp_container{
+    border-radius: 55%;
+    transition:all 0.3s ease;
+}
+
+.usercp_container:hover {
+     border-radius: 0%;
+     transition:all 0.3s ease;
+}
+
+.usercp_container img {
+    border-radius: 55%;
+    transition:all 0.3s ease;
+}
+
+.usercp_container img:hover {
+     border-radius: 0%;
+     transition:all 0.3s ease;
+}
+
+.pmspace {
+	float: right;
+	margin: -3px 5px;
+}
+
+.pmspace_container {
+	background: #fff;
+	border: 1px solid #ccc;
+	width: 100px;
+	display: inline-block;
+}
+
+.pmspace_used {
+	display: inline-block;
+	color: #fff;
+	margin: -1px;
+}
+
+.pmspace_used.low {
+	border: 1px solid #0c5a01;
+	background: #167203;
+}
+
+.pmspace_used.medium {
+	background: #ff862b;
+	border: 1px solid #d7611e;
+}
+
+.pmspace_used.high {
+	background: #e73c3c;
+	border: 1px solid #c00;
+}
+
+.pmspace_unused {
+	display: inline-block;
+}
+
+.pmspace_text {
+	padding: 1px 5px;
+	display: inline-block;
+}
+
+
+		
+		
+		
+		
+		
+		
+		]]>
+		</stylesheet>
+		<stylesheet name="global.css" version="1830"><![CDATA[/*
  * MyBB: Rounder Frontend Theme 
  *
  * File: global.css
@@ -2355,9 +2551,10 @@ div.jqi .jqisubstate .jqibuttons button {
 		
 		
 		
+		
 		]]>
 		</stylesheet>
-		<stylesheet name="css3.css" version="1822"><![CDATA[/*
+		<stylesheet name="css3.css" version="1830"><![CDATA[/*
  * MyBB: Rounder Frontend Theme 
  *
  * File: css3.css
@@ -2563,9 +2760,10 @@ element {
 		
 		
 		
+		
 		]]>
 		</stylesheet>
-		<stylesheet name="modcp.css" attachedto="modcp.php" version="1822"><![CDATA[/*
+		<stylesheet name="modcp.css" attachedto="modcp.php" version="1830"><![CDATA[/*
  * MyBB: Rounder Frontend Theme 
  *
  * File: modcp.css
@@ -2677,197 +2875,6 @@ element {
 
 
 		
-		
-		
-		
-		
-		]]>
-		</stylesheet>
-		<stylesheet name="usercp.css" attachedto="usercp.php|usercp2.php|private.php" version="1822"><![CDATA[/*
- * MyBB: Rounder Frontend Theme 
- *
- * File: usercp.css
- * 
- * Author: Vintagedaddyo
- *
- * MyBB Version: 1.8
- *
- * Theme Version: 1.1
- * 
- */
-
-.usercp_nav_item {
-	display: block;
-	padding: 1px 0 1px 23px; 
-	background-repeat: no-repeat;
-}
-
-.usercp_nav_composepm {
-	background-position: 0 0; 
-	background-image: url('themes/rounder/usercp/composepm.png'); 
-}
-
-.usercp_nav_pmfolder {
-    background-image: url('themes/rounder/usercp/pmfolder.png');  
-}
-
-.usercp_nav_sub_pmfolder {
-	padding-left: 40px;
-	background-image: url('themes/rounder/usercp/sub_pmfolder.png'); 
-}
-
-.usercp_nav_trash_pmfolder {
-	padding-left: 40px;
-	background-image: url('themes/rounder/usercp/trash_pmfolder.png');  
-}
-
-.usercp_nav_pmtracking {
-	background-image: url('themes/rounder/usercp/pmtracking.png');  
-}
-
-.usercp_nav_pmfolders {
-    background-image: url('themes/rounder/usercp/editfolders.png');
-}
-
-.usercp_nav_profile {
-	background-image: url('themes/rounder/usercp/profile.png');  
-}
-
-.usercp_nav_email {
-	padding-left: 40px;
-	background-image: url('themes/rounder/usercp/email.png');  
-}
-
-.usercp_nav_password {
-	padding-left: 40px;
-	background-image: url('themes/rounder/usercp/password.png'); 
-}
-
-.usercp_nav_username {
-	padding-left: 40px;
-	background-image: url('themes/rounder/usercp/username.png'); 
-} 
-
-.usercp_nav_editsig {
-	padding-left: 40px;
-	background-image: url('themes/rounder/usercp/editsig.png'); 
-}
-
-.usercp_nav_avatar {
-	padding-left: 40px;
-	background-image: url('themes/rounder/usercp/avatar.png');  
-}
-
-.usercp_nav_options {
-	background-image: url('themes/rounder/usercp/options.png');  
-}
-
-.usercp_nav_usergroups {
-	background-image: url('themes/rounder/usercp/usergroups.png');  
-}
-
-.usercp_nav_editlists {
-	background-image: url('themes/rounder/usercp/editlists.png');  
-}
-
-.usercp_nav_attachments {
-	background-image: url('themes/rounder/usercp/attachments.png');  
-}
-
-.usercp_nav_drafts {
-	background-image: url('themes/rounder/usercp/drafts.png');  
-}
-
-.usercp_nav_subscriptions {
-	background-image: url('themes/rounder/usercp/subscriptions.png'); 
-}
-
-.usercp_nav_fsubscriptions {
-	background-image: url('themes/rounder/usercp/fsubscriptions.png');  
-}
-
-.usercp_nav_viewprofile {
-	background-image: url('themes/rounder/usercp/viewprofile.png');  
-}
-
-.usercp_nav_home {
-	background-image: url('themes/rounder/usercp/home.png');  
-}
-
-.usercp_notepad {
-	width: 99%;
-}
-
-.usercp_container {
-	margin: 5px;
-	padding: 8px;
-	border: 1px solid rgb(165, 202, 228);
-
-}
-
-.usercp_container{
-    border-radius: 55%;
-    transition:all 0.3s ease;
-}
-
-.usercp_container:hover {
-     border-radius: 0%;
-     transition:all 0.3s ease;
-}
-
-.usercp_container img {
-    border-radius: 55%;
-    transition:all 0.3s ease;
-}
-
-.usercp_container img:hover {
-     border-radius: 0%;
-     transition:all 0.3s ease;
-}
-
-.pmspace {
-	float: right;
-	margin: -3px 5px;
-}
-
-.pmspace_container {
-	background: #fff;
-	border: 1px solid #ccc;
-	width: 100px;
-	display: inline-block;
-}
-
-.pmspace_used {
-	display: inline-block;
-	color: #fff;
-	margin: -1px;
-}
-
-.pmspace_used.low {
-	border: 1px solid #0c5a01;
-	background: #167203;
-}
-
-.pmspace_used.medium {
-	background: #ff862b;
-	border: 1px solid #d7611e;
-}
-
-.pmspace_used.high {
-	background: #e73c3c;
-	border: 1px solid #c00;
-}
-
-.pmspace_unused {
-	display: inline-block;
-}
-
-.pmspace_text {
-	padding: 1px 5px;
-	display: inline-block;
-}
-
-
 		
 		
 		
@@ -2991,15 +2998,15 @@ element {
 				{$awaitingusers}
 				<navigation>
 				<br />]]></template>
-		<template name="headerinclude" version="1820"><![CDATA[<link rel="alternate" type="application/rss+xml" title="{$lang->latest_threads} (RSS 2.0)" href="{$mybb->settings['bburl']}/syndication.php" />
+		<template name="headerinclude" version="1830"><![CDATA[<link rel="alternate" type="application/rss+xml" title="{$lang->latest_threads} (RSS 2.0)" href="{$mybb->settings['bburl']}/syndication.php" />
 <link rel="alternate" type="application/atom+xml" title="{$lang->latest_threads} (Atom 1.0)" href="{$mybb->settings['bburl']}/syndication.php?type=atom1.0" />
 <meta http-equiv="Content-Type" content="text/html; charset={$charset}" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <!-- Add Favicon -->
 <link rel="Shortcut icon" href="{$theme['imgdir']}/favicon.ico" />
-<script type="text/javascript" src="{$mybb->asset_url}/jscripts/jquery.js?ver=1820"></script>
-<script type="text/javascript" src="{$mybb->asset_url}/jscripts/jquery.plugins.min.js?ver=1820"></script>
-<script type="text/javascript" src="{$mybb->asset_url}/jscripts/general.js?ver=1820"></script>
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/jquery.js?ver=1823"></script>
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/jquery.plugins.min.js?ver=1821"></script>
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/general.js?ver=1827"></script>
 
 {$stylesheets}
 
@@ -3045,7 +3052,9 @@ $(document).ready(function(){
 <script type="text/javascript">
 <!--
 	lang.unknown_error = "{$lang->unknown_error}";
-
+	lang.confirm_title = "{$lang->confirm_title}";
+	lang.expcol_collapse = "{$lang->expcol_collapse}";
+	lang.expcol_expand = "{$lang->expcol_expand}";
 	lang.select2_match = "{$lang->select2_match}";
 	lang.select2_matches = "{$lang->select2_matches}";
 	lang.select2_nomatches = "{$lang->select2_nomatches}";
